@@ -1,0 +1,8 @@
+.idea/
+ether-simple-storage/node_modules
+ether-simple-storage/.env
+ether-simple-storage/.encryptedKey.json
+hardhat-simple-storage/node_modules
+hardhat-simple-storage/.env
+hardhat-simple-storage-ts/node_modules
+hardhat-simple-storage-ts/.env
