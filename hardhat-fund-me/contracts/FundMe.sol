@@ -35,6 +35,8 @@ contract FundMe {
     }
 
     function fund() public payable {
+        console.log(" msg val ", msg.value);
+        console.log(" tototal ", msg.value.getConversionRate(i_priceFeed));
         require(msg.value.getConversionRate(i_priceFeed) >= MINIMUM_USD, "You need to spend more ETH!");
         // require(PriceConverter.getConversionRate(msg.value) >= MINIMUM_USD, "You need to spend more ETH!");
         addressToAmountFunded[msg.sender] += msg.value;

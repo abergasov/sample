@@ -2,6 +2,7 @@
 pragma solidity ^0.8.8;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+import "hardhat/console.sol";
 
 // Why is this a library and not abstract?
 // Why not an interface?
@@ -28,6 +29,8 @@ library PriceConverter {
   returns (uint256)
   {
     uint256 ethPrice = getPrice(priceFeed);
+    console.log("ethPrice", ethPrice);
+    console.log("ethAmount", ethAmount);
     uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1000000000000000000;
     // the actual ETH/USD conversion rate, after adjusting the extra 0s.
     return ethAmountInUsd;
