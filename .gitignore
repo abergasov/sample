@@ -6,3 +6,5 @@ hardhat-simple-storage/node_modules
 hardhat-simple-storage/.env
 hardhat-simple-storage-ts/node_modules
 hardhat-simple-storage-ts/.env
+hardhat-fund-me/.env
+hardhat-fund-me/node_modules
