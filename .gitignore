@@ -9,3 +9,8 @@ hardhat-simple-storage-ts/.env
 hardhat-fund-me/.env
 hardhat-fund-me/node_modules
 simple-web3-ui/node_modules
+lotery/node_modules
+lotery/.env
+lotery/artifacts/*
+lotery/deployments/*
+cere_io/node_modules
